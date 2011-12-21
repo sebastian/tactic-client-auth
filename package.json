@@ -1,3 +1,4 @@
+// http://howtonode.org/managing-module-dependencies
 "dependencies": {
   "zmq",
   "socket.io"
