@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>My Page</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+	<script type="text/javascript" src="ext/ember.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="lib/app.js"></script>
+
+</head> 
+<body> 
+
+<div data-role="page" id="list-page">
+
+	<div data-role="content">	
+    <h2>Requests pending approval</h2>
+    <script type="text/x-handlebars">
+    {{#view App.requestsView}}
+      <ul id="requests-listview" data-role="listview" data-inset="false" data-filter="false">
+      {{#each App.requestController}}
+        {{#view App.RequestView contentBinding="this" tagName="li"}}
+          <a href="#action-page" data-rel="dialog" data-transition="pop">
+            <h3>{{content.client}}</h3>
+            <p class="ui-li-aside"><strong>9:18</strong>AM</p>
+          </a>
+        {{/view}}
+      {{/each}}
+      </ul>
+    {{/view}}
+    </script>
+
+	</div><!-- /page1 -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="action-page">
+  <script type="text/x-handlebars">
+    <div data-role="header" data-theme="e">
+      <h1>Grant access?</h1>
+    </div><!-- /header -->
+
+    <div data-role="content">
+      <h2>Should {{App.activeRequest.client}} be granted access to {{App.activeRequest.resource}}?</h2>
+      <p>
+        {{#view App.ActionButton action="accept"}}
+          <a href="#list-page" data-icon="check" 
+              data-rel="back" data-role="button" 
+              data-inline="true">
+            Accept
+          </a>
+        {{/view}}
+
+        {{#view App.ActionButton action="reject"}}
+          <a href="#list-page" data-icon="delete" 
+              data-rel="back" data-role="button" 
+              data-inline="true">
+            Reject
+          </a>
+        {{/view}}
+      </p>	
+    </div>
+  </script>
+
+</div>
+
+</body>
+</html>
+

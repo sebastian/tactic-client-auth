@@ -1,0 +1,380 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/Users/seb/local/bin/npm', 'install', 'zmq' ]
+info using npm@1.0.106
+info using node@v0.6.4
+verbose config file /Users/seb/.npmrc
+verbose config file /Users/seb/local/etc/npmrc
+verbose config file /Users/seb/local/lib/node_modules/npm/npmrc
+silly testEngine { author: 
+silly testEngine    { name: 'Robert Kieffer',
+silly testEngine      email: 'robert@broofa.com',
+silly testEngine      url: 'http://github.com/broofa' },
+silly testEngine   contributors: 
+silly testEngine    [ { name: 'Benjamin Thomas',
+silly testEngine        email: 'benjamin@benjaminthomas.org',
+silly testEngine        url: 'http://github.com/bentomas' } ],
+silly testEngine   dependencies: {},
+silly testEngine   description: 'A comprehensive library for mime-type mapping',
+silly testEngine   devDependencies: { async_testing: '' },
+silly testEngine   keywords: [ 'util', 'mime' ],
+silly testEngine   main: 'mime.js',
+silly testEngine   name: 'mime',
+silly testEngine   repository: { url: 'git://github.com/bentomas/node-mime.git', type: 'git' },
+silly testEngine   version: '1.2.4',
+silly testEngine   _id: 'mime@1.2.4',
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.106',
+silly testEngine   _nodeVersion: 'v0.6.4',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /Users/seb/Programmering/Kleio/node_modules/mime/package.json
+verbose loadDefaults mime@1.2.4
+silly testEngine { name: 'socket.io',
+silly testEngine   version: '0.8.7',
+silly testEngine   description: 'Real-time apps made cross-browser & easy with a WebSocket-like API',
+silly testEngine   homepage: 'http://socket.io',
+silly testEngine   keywords: [ 'websocket', 'socket', 'realtime', 'socket.io', 'comet', 'ajax' ],
+silly testEngine   author: { name: 'Guillermo Rauch', email: 'guillermo@learnboost.com' },
+silly testEngine   contributors: 
+silly testEngine    [ { name: 'Guillermo Rauch', email: 'rauchg@gmail.com' },
+silly testEngine      { name: 'Arnout Kazemier', email: 'info@3rd-eden.com' },
+silly testEngine      { name: 'Vladimir Dronnikov', email: 'dronnikov@gmail.com' },
+silly testEngine      { name: 'Einar Otto Stangvik', email: 'einaros@gmail.com' } ],
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/LearnBoost/socket.io.git' },
+silly testEngine   dependencies: 
+silly testEngine    { 'socket.io-client': '0.8.7',
+silly testEngine      policyfile: '0.0.4',
+silly testEngine      redis: '0.6.7' },
+silly testEngine   devDependencies: 
+silly testEngine    { expresso: '0.9.2',
+silly testEngine      should: '0.0.4',
+silly testEngine      assertvanish: '0.0.3-1',
+silly testEngine      benchmark: '0.2.2',
+silly testEngine      microtime: '0.1.3-1',
+silly testEngine      colors: '0.5.1' },
+silly testEngine   main: 'index',
+silly testEngine   engines: { node: '>= 0.4.0' },
+silly testEngine   _id: 'socket.io@0.8.7',
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.106',
+silly testEngine   _nodeVersion: 'v0.6.4',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /Users/seb/Programmering/Kleio/node_modules/socket.io/package.json
+verbose loadDefaults socket.io@0.8.7
+verbose into /Users/seb/Programmering/Kleio [ 'zmq' ]
+verbose cache add zmq
+verbose cache add [ 'zmq', null ]
+silly cache add: name, spec, args [ undefined, 'zmq', [ 'zmq', null ] ]
+verbose parsed url { pathname: 'zmq', path: 'zmq', href: 'zmq' }
+info addNamed [ 'zmq', '' ]
+verbose addNamed [ null, '' ]
+verbose GET zmq
+verbose raw, before any munging zmq
+verbose url resolving [ 'http://registry.npmjs.org/', './zmq' ]
+verbose url resolved http://registry.npmjs.org/zmq
+verbose etag "6HZVOG41JGQZLLDC17R2UAFL9"
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.1.0 (Erlang OTP/R14B04)',
+silly get cb     etag: '"6HZVOG41JGQZLLDC17R2UAFL9"',
+silly get cb     date: 'Wed, 21 Dec 2011 14:43:45 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag zmq from cache
+verbose GET zmq/2.0.0
+verbose raw, before any munging zmq/2.0.0
+verbose url resolving [ 'http://registry.npmjs.org/', './zmq/2.0.0' ]
+verbose url resolved http://registry.npmjs.org/zmq/2.0.0
+verbose etag "6HZVOG41JGQZLLDC17R2UAFL9"
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.1.0 (Erlang OTP/R14B04)',
+silly get cb     etag: '"6HZVOG41JGQZLLDC17R2UAFL9"',
+silly get cb     date: 'Wed, 21 Dec 2011 14:43:46 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag zmq/2.0.0 from cache
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.8-darwin-x64-11.2.0',
+verbose bin dist   { shasum: '3d1c8b30fb62e741dc12626bc89c73abf3097756',
+verbose bin dist     tarball: 'http://registry.npmjs.org/zmq/-/zmq-2.0.0.tgz' } ]
+verbose has wscript [ undefined,
+verbose has wscript   { file: '/Users/seb/.npm/zmq/2.0.0/package/package.json',
+verbose has wscript     contributors: false,
+verbose has wscript     serverjs: false,
+verbose has wscript     wscript: true } ]
+silly testEngine { name: 'zmq',
+silly testEngine   version: '2.0.0',
+silly testEngine   description: 'Bindings for node.js to zeromq',
+silly testEngine   main: 'index',
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/JustinTulloss/zeromq.node.git' },
+silly testEngine   devDependencies: { should: '0.3.1' },
+silly testEngine   engines: { node: '>=0.3.0 <0.7.0' },
+silly testEngine   contributors: 
+silly testEngine    [ { name: 'Justin Tulloss',
+silly testEngine        email: 'justin.tulloss@gmail.com',
+silly testEngine        url: 'http://justin.harmonize.fm' },
+silly testEngine      { name: 'Stéphan Kochen',
+silly testEngine        email: 'stephan@kochen.nl',
+silly testEngine        url: 'http://stephan.kochen.nl/' },
+silly testEngine      { name: 'Mike Castleman',
+silly testEngine        email: 'm@mlcastle.net',
+silly testEngine        url: 'http://mlcastle.net/' },
+silly testEngine      { name: 'Matt Crocker' },
+silly testEngine      { name: 'Jeremy Barnes',
+silly testEngine        email: 'jeremy@barneso.com',
+silly testEngine        url: 'http://www.barneso.com/' },
+silly testEngine      { name: 'Rick',
+silly testEngine        email: 'technoweenie@gmail.com',
+silly testEngine        url: 'http://techno-weenie.net/' },
+silly testEngine      { name: 'Corey Jewett', url: 'http://syntheticplayground.com/' },
+silly testEngine      { name: 'Micheil Smith',
+silly testEngine        email: 'micheil@brandedcode.com',
+silly testEngine        url: 'http://brandedcode.com/' },
+silly testEngine      { name: 'TJ Holowaychuk',
+silly testEngine        email: 'tj@vision-media.ca',
+silly testEngine        url: 'http://tjholowaychuk.com/' } ],
+silly testEngine   _id: 'zmq@2.0.0',
+silly testEngine   scripts: { preinstall: 'node-waf clean || true; node-waf configure build' },
+silly testEngine   dependencies: {},
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.106',
+silly testEngine   _nodeVersion: 'v0.6.4',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /Users/seb/.npm/zmq/2.0.0/package/package.json
+verbose loadDefaults zmq@2.0.0
+silly resolved [ { name: 'zmq',
+silly resolved     version: '2.0.0',
+silly resolved     description: 'Bindings for node.js to zeromq',
+silly resolved     main: 'index',
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/JustinTulloss/zeromq.node.git' },
+silly resolved     devDependencies: { should: '0.3.1' },
+silly resolved     engines: { node: '>=0.3.0 <0.7.0' },
+silly resolved     contributors: 
+silly resolved      [ { name: 'Justin Tulloss',
+silly resolved          email: 'justin.tulloss@gmail.com',
+silly resolved          url: 'http://justin.harmonize.fm' },
+silly resolved        { name: 'Stéphan Kochen',
+silly resolved          email: 'stephan@kochen.nl',
+silly resolved          url: 'http://stephan.kochen.nl/' },
+silly resolved        { name: 'Mike Castleman',
+silly resolved          email: 'm@mlcastle.net',
+silly resolved          url: 'http://mlcastle.net/' },
+silly resolved        { name: 'Matt Crocker' },
+silly resolved        { name: 'Jeremy Barnes',
+silly resolved          email: 'jeremy@barneso.com',
+silly resolved          url: 'http://www.barneso.com/' },
+silly resolved        { name: 'Rick',
+silly resolved          email: 'technoweenie@gmail.com',
+silly resolved          url: 'http://techno-weenie.net/' },
+silly resolved        { name: 'Corey Jewett', url: 'http://syntheticplayground.com/' },
+silly resolved        { name: 'Micheil Smith',
+silly resolved          email: 'micheil@brandedcode.com',
+silly resolved          url: 'http://brandedcode.com/' },
+silly resolved        { name: 'TJ Holowaychuk',
+silly resolved          email: 'tj@vision-media.ca',
+silly resolved          url: 'http://tjholowaychuk.com/' } ],
+silly resolved     _id: 'zmq@2.0.0',
+silly resolved     scripts: { preinstall: 'node-waf clean || true; node-waf configure build' },
+silly resolved     dependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.0.106',
+silly resolved     _nodeVersion: 'v0.6.4',
+silly resolved     _defaultsLoaded: true } ]
+info into /Users/seb/Programmering/Kleio zmq@2.0.0
+info installOne zmq@2.0.0
+info unbuild /Users/seb/Programmering/Kleio/node_modules/zmq
+verbose from cache /Users/seb/.npm/zmq/2.0.0/package/package.json
+verbose mkdir (expected) error ENOENT, no such file or directory '/Users/seb/Programmering/Kleio/node_modules/___zmq.npm'
+verbose mkdir done: /Users/seb/Programmering/Kleio/node_modules/___zmq.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /Users/seb/Programmering/Kleio/node_modules/zmq
+silly gunzTarPerm modes [ '755', '644' ]
+silly spawning [ 'tar',
+silly spawning   [ '-zmvxpf', '/Users/seb/.npm/zmq/2.0.0/package.tgz' ],
+silly spawning   '/Users/seb/Programmering/Kleio/node_modules/___zmq.npm' ]
+silly tar err x package/.gitignore
+silly tar err x package/binding.cc
+silly tar err x package/index.js
+silly tar err x package/LICENSE
+silly tar err x package/Makefile
+silly tar err x package/package.json
+silly tar err x package/README.md
+silly tar err x package/wscript
+silly tar err x package/lib/index.js
+silly tar err x package/test/run
+silly tar err x package/test/stress_buffer.js
+silly tar err x package/test/test.exports.js
+silly tar err x package/test/test.js
+silly tar err x package/test/test.socket.events.js
+silly tar err x package/test/test.socket.js
+silly tar err x package/test/test.socket.messages.js
+silly tar err x package/test/test.socket.pub-sub.filter.js
+silly tar err x package/test/test.socket.pub-sub.js
+silly tar err x package/test/test.socket.req-rep.js
+silly tar err x package/test/test.socket.req-rep.multiple.js
+silly tar err x package/examples/workers/producer.js
+silly tar err x package/examples/workers/worker.js
+silly tar err x package/docs/files.html
+silly tar err x package/docs/index.html
+silly tar err x package/docs/javascript/all.js
+silly tar err x package/docs/javascript/html5.js
+silly tar err x package/docs/css/all.css
+silly tar err x package/docs/css/handheld.css
+silly tar err x package/docs/css/screen.css
+silly tar err x package/docs/css/fonts/mplus-1m-bold-webfont.eot
+silly tar err x package/docs/css/fonts/mplus-1m-bold-webfont.svg
+silly tar err x package/docs/css/fonts/mplus-1m-bold-webfont.ttf
+silly tar err x package/docs/css/fonts/mplus-1m-bold-webfont.woff
+silly tar err x package/docs/css/fonts/mplus-1m-regular-webfont.eot
+silly tar err x package/docs/css/fonts/mplus-1m-regular-webfont.svg
+silly tar err x package/docs/css/fonts/mplus-1m-regular-webfont.ttf
+silly tar err x package/docs/css/fonts/mplus-1m-regular-webfont.woff
+silly tar err x package/docs/symbols/_global_.html
+silly tar err x package/docs/symbols/Socket.html
+silly tar err x package/docs/symbols/src/lib_index.js.html
+silly tar exit 0
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/.gitignore
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/binding.cc
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/index.js
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/LICENSE
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/Makefile
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/package.json
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/README.md
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/wscript
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/lib
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/lib/index.js
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/test
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/test/run
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/test/stress_buffer.js
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/test/test.exports.js
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/test/test.js
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/test/test.socket.events.js
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/test/test.socket.js
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/test/test.socket.messages.js
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/test/test.socket.pub-sub.filter.js
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/test/test.socket.pub-sub.js
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/test/test.socket.req-rep.js
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/test/test.socket.req-rep.multiple.js
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/examples
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/examples/workers
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/examples/workers/producer.js
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/examples/workers/worker.js
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/docs
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/docs/files.html
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/docs/index.html
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/docs/javascript
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/docs/javascript/all.js
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/docs/javascript/html5.js
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/docs/css
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/docs/css/all.css
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/docs/css/handheld.css
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/docs/css/screen.css
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/docs/css/fonts
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/docs/css/fonts/mplus-1m-bold-webfont.eot
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/docs/css/fonts/mplus-1m-bold-webfont.svg
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/docs/css/fonts/mplus-1m-bold-webfont.ttf
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/docs/css/fonts/mplus-1m-bold-webfont.woff
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/docs/css/fonts/mplus-1m-regular-webfont.eot
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/docs/css/fonts/mplus-1m-regular-webfont.svg
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/docs/css/fonts/mplus-1m-regular-webfont.ttf
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/docs/css/fonts/mplus-1m-regular-webfont.woff
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/docs/symbols
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/docs/symbols/_global_.html
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/docs/symbols/Socket.html
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/docs/symbols/src
+silly asyncMap in gTP /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package/docs/symbols/src/lib_index.js.html
+verbose gunzed /Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package
+verbose rm'ed /Users/seb/Programmering/Kleio/node_modules/zmq
+verbose renamed [ '/Users/seb/Programmering/Kleio/node_modules/___zmq.npm/package',
+verbose renamed   '/Users/seb/Programmering/Kleio/node_modules/zmq' ]
+verbose has wscript [ undefined,
+verbose has wscript   { file: '/Users/seb/Programmering/Kleio/node_modules/zmq/package.json',
+verbose has wscript     contributors: false,
+verbose has wscript     serverjs: false,
+verbose has wscript     wscript: true } ]
+silly testEngine { name: 'zmq',
+silly testEngine   version: '2.0.0',
+silly testEngine   description: 'Bindings for node.js to zeromq',
+silly testEngine   main: 'index',
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/JustinTulloss/zeromq.node.git' },
+silly testEngine   devDependencies: { should: '0.3.1' },
+silly testEngine   engines: { node: '>=0.3.0 <0.7.0' },
+silly testEngine   contributors: 
+silly testEngine    [ { name: 'Justin Tulloss',
+silly testEngine        email: 'justin.tulloss@gmail.com',
+silly testEngine        url: 'http://justin.harmonize.fm' },
+silly testEngine      { name: 'Stéphan Kochen',
+silly testEngine        email: 'stephan@kochen.nl',
+silly testEngine        url: 'http://stephan.kochen.nl/' },
+silly testEngine      { name: 'Mike Castleman',
+silly testEngine        email: 'm@mlcastle.net',
+silly testEngine        url: 'http://mlcastle.net/' },
+silly testEngine      { name: 'Matt Crocker' },
+silly testEngine      { name: 'Jeremy Barnes',
+silly testEngine        email: 'jeremy@barneso.com',
+silly testEngine        url: 'http://www.barneso.com/' },
+silly testEngine      { name: 'Rick',
+silly testEngine        email: 'technoweenie@gmail.com',
+silly testEngine        url: 'http://techno-weenie.net/' },
+silly testEngine      { name: 'Corey Jewett', url: 'http://syntheticplayground.com/' },
+silly testEngine      { name: 'Micheil Smith',
+silly testEngine        email: 'micheil@brandedcode.com',
+silly testEngine        url: 'http://brandedcode.com/' },
+silly testEngine      { name: 'TJ Holowaychuk',
+silly testEngine        email: 'tj@vision-media.ca',
+silly testEngine        url: 'http://tjholowaychuk.com/' } ],
+silly testEngine   _id: 'zmq@2.0.0',
+silly testEngine   scripts: { preinstall: 'node-waf clean || true; node-waf configure build' },
+silly testEngine   dependencies: {},
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.106',
+silly testEngine   _nodeVersion: 'v0.6.4',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /Users/seb/Programmering/Kleio/node_modules/zmq/package.json
+verbose loadDefaults zmq@2.0.0
+info preinstall zmq@2.0.0
+verbose unsafe-perm in lifecycle true
+silly exec sh "-c" "node-waf clean || true; node-waf configure build"
+silly spawning [ 'sh',
+silly spawning   [ '-c', 'node-waf clean || true; node-waf configure build' ],
+silly spawning   '/Users/seb/Programmering/Kleio/node_modules/zmq' ]
+info zmq@2.0.0 Failed to exec preinstall script
+ERR! error installing zmq@2.0.0 Error: zmq@2.0.0 preinstall: `node-waf clean || true; node-waf configure build`
+ERR! error installing zmq@2.0.0 `sh "-c" "node-waf clean || true; node-waf configure build"` failed with 1
+ERR! error installing zmq@2.0.0     at ChildProcess.<anonymous> (/Users/seb/local/lib/node_modules/npm/lib/utils/exec.js:49:20)
+ERR! error installing zmq@2.0.0     at ChildProcess.emit (events.js:70:17)
+ERR! error installing zmq@2.0.0     at maybeExit (child_process.js:359:16)
+ERR! error installing zmq@2.0.0     at Process.onexit (child_process.js:395:5)
+info unbuild /Users/seb/Programmering/Kleio/node_modules/zmq
+verbose from cache /Users/seb/Programmering/Kleio/node_modules/zmq/package.json
+info preuninstall zmq@2.0.0
+info uninstall zmq@2.0.0
+verbose unbuild zmq@2.0.0 [ true,
+verbose unbuild zmq@2.0.0   '/Users/seb/Programmering/Kleio/node_modules',
+verbose unbuild zmq@2.0.0   '/Users/seb/Programmering/Kleio/node_modules' ]
+info postuninstall zmq@2.0.0
+verbose installOne cb zmq@2.0.0
+ERR! zmq@2.0.0 preinstall: `node-waf clean || true; node-waf configure build`
+ERR! `sh "-c" "node-waf clean || true; node-waf configure build"` failed with 1
+ERR! 
+ERR! Failed at the zmq@2.0.0 preinstall script.
+ERR! This is most likely a problem with the zmq package,
+ERR! not with npm itself.
+ERR! Tell the author that this fails on your system:
+ERR!     node-waf clean || true; node-waf configure build
+ERR! You can get their info via:
+ERR!     npm owner ls zmq
+ERR! There is likely additional logging output above.
+ERR! 
+ERR! System Darwin 11.2.0
+ERR! command "node" "/Users/seb/local/bin/npm" "install" "zmq"
+ERR! cwd /Users/seb/Programmering/Kleio/client_auth
+ERR! node -v v0.6.4
+ERR! npm -v 1.0.106
+ERR! code ELIFECYCLE
+verbose exit [ 1, true ]
