@@ -20,14 +20,17 @@
     <script type="text/x-handlebars">
     {{#view App.requestsView}}
       <ul id="requests-listview" data-role="listview" data-inset="false" data-filter="false">
-      {{#each App.requestController}}
-        {{#view App.RequestView contentBinding="this" tagName="li"}}
-          <a href="#action-page" data-rel="dialog" data-transition="pop">
-            <h3>{{content.client}}</h3>
-            <p class="ui-li-aside"><strong>9:18</strong>AM</p>
-          </a>
-        {{/view}}
-      {{/each}}
+      {{#if App.requestController.hasRequests}}
+        {{#each App.requestController}}
+          {{#view App.RequestView contentBinding="this" tagName="li" class="ui-li ui-li-static ui-body-c"}}
+            <a href="#action-page" data-rel="dialog" data-transition="pop">
+              <h3><strong>{{content.client}}</strong> for {{content.resource}}</h3>
+            </a>
+          {{/view}}
+        {{/each}}
+      {{else}}
+        <li class="ui-li ui-li-static ui-body-c">No peding requests</li>
+      {{/if}}
       </ul>
     {{/view}}
     </script>
@@ -39,11 +42,11 @@
 <div data-role="page" id="action-page">
   <script type="text/x-handlebars">
     <div data-role="header" data-theme="e">
-      <h1>Grant access?</h1>
+      <h1>Ok?</h1>
     </div><!-- /header -->
 
     <div data-role="content">
-      <h2>Should {{App.activeRequest.client}} be granted access to {{App.activeRequest.resource}}?</h2>
+      <h2>Should <strong>{{App.activeRequest.client}}</strong> be granted access to <strong>{{App.activeRequest.resource}}</strong>?</h2>
       <p>
         {{#view App.ActionButton action="accept"}}
           <a href="#list-page" data-icon="check" 

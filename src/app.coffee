@@ -11,7 +11,6 @@ App = Em.Application.create()
 App.Request = Em.Object.extend
   client: 'ClientName'
   resource: 'ResourceName'
-  timeStamp: 'TimeStamp'
   id: 1
 
 
@@ -23,7 +22,13 @@ App.requestController = Em.ArrayController.create
   # Array of all the requests
   content: []
 
-  addRequest: (request) -> @addObject request
+  addRequest: (request_data) -> 
+    request = App.Request.create
+      client: request_data.client
+      resource: request_data.resource
+      id: request_data.id
+    @pushObject request
+  addRequests: (requests_data) ->  @addRequest data for data in requests_data
 
   removeRequest: (request) -> @removeObject request
 
@@ -39,12 +44,13 @@ App.requestController = Em.ArrayController.create
   reject: (request) ->
     @removeRequest request
     App.sendDenyRequest request
+  
+  hasRequests: (-> @get('length') != 0).property('@each')
 
 App.activeRequest = Em.Object.create
   content: null
 
-  setRequest: (request) ->
-    @set('content', request)
+  setRequest: (request) -> @set('content', request)
 
   client: ( -> 
     c = @get('content')
@@ -56,15 +62,8 @@ App.activeRequest = Em.Object.create
     c.get('resource') if c
   ).property('content.resource')
 
-  accept: ->
-    console.log "approve from controller"
-    r = @get('content')
-    App.requestController.accept r
-  
-  reject: ->
-    console.log "deny from controller"
-    r = @get('content')
-    App.requestController.reject r
+  accept: -> App.requestController.accept @get('content')
+  reject: -> App.requestController.reject @get('content')
 
 
 ###############################
@@ -72,20 +71,11 @@ App.activeRequest = Em.Object.create
 ###############################
 
 App.requestsView = Em.View.extend
-  didInsertElement: ->
-    ($ "#requests-listview").listview()
-
-App.activeRequestView = Em.View.extend
-  approve: ->
-    console.log "approve"
-
-  deny: ->
-    console.log "deny"
+  didInsertElement: -> ($ "#requests-listview").listview()
 
 App.RequestView = Em.View.extend
-  click: ->
-    request = @get('content')
-    App.activeRequest.setRequest request
+  didInsertElement: -> ($ "#requests-listview").listview()
+  click: -> App.activeRequest.setRequest @get('content')
 
 App.ActionButton = Em.View.extend
   action: null
@@ -101,19 +91,10 @@ App.ActionButton = Em.View.extend
 ###############################
 
 socket = io.connect()
-
+socket.on 'new_request', (data) -> App.requestController.addRequest data
+socket.on 'new_requests', (data) -> App.requestController.addRequests data
 socket.on 'approve', (data) -> App.requestController.removeRequestById data.request_id
-
 socket.on 'reject', (data) -> App.requestController.removeRequestById data.request_id
 
 App.sendApproveRequest = (request) -> socket.emit 'approve', request.get('id')
-
 App.sendDenyRequest = (request) -> socket.emit 'reject', request.get('id')
-
-###############################
-# DOM Ready
-###############################
-$ ->
-  App.requestController.addRequest(App.Request.create(id:1))
-  App.requestController.addRequest(App.Request.create(id:2))
-  App.requestController.addRequest(App.Request.create(id:3))

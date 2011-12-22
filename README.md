@@ -12,4 +12,30 @@ This project depends on [node.js](http://nodejs.org/) being installed. I also re
 
 - [node.js](http://nodejs.org/)
 - [npm](http://npmjs.org/)
-- [0mq from source](https://github.com/zeromq/zeromq2-1)
+- [socket.io](http://socket.io)
+
+## Running application
+
+The node application can be run as:
+
+    node lib/web.js
+
+as of this writing, the web app is listening on port 8080.
+
+## Development
+
+The application has been developed in coffeescript. The folder layout in use is
+dictacted by anvil.js.
+
+For ease of development, please install anvil.js
+
+    npm install anvil.js -g
+
+and have anvil in continuous integration mode while developing:
+
+    anvil -h --ci
+
+This ensures the coffeescript files are compiled on change.
+HTML is automatically served out on port 3080. Running on the dev server will
+not give you the server side node.js logic or the socket.io functionality, and
+is therefore not very useful.
