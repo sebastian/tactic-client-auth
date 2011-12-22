@@ -25,8 +25,7 @@ as of this writing, the web app is listening on port 8080.
 Then, to get some action in the user interface, add some dummy client requests
 by doing POST requests to /requests.
 
-    curl -d "{\"client\":\"macbook.kle.io\",\"resource\":\"iphone.kle.io\"}" \
-        http://localhost:8080/requests
+    curl -d "{\"client\":\"macbook.kle.io\",\"resource\":\"iphone.kle.io\"}" http://localhost:8080/requests
 
 ## Development
 
