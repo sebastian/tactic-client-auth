@@ -1,4 +1,13 @@
-// http://howtonode.org/managing-module-dependencies
-"dependencies": {
-  "socket.io"
+{
+    "name": "tactic-client-auth"
+  , "version": "0.0.1"
+  , "author": "Sebastian Probst Eide"
+  , "keywords": ["signpost", "tactic"]
+  , "repository": {
+        "type": "git"
+      , "url": "https://sebastian@github.com/sebastian/tactic-client-auth.git"
+    }
+  , "dependencies": {
+        "socket.io": ">= 0.8.7"
+    }
 }
